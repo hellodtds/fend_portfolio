@@ -7,3 +7,5 @@
 
 # Portfolio Site
 - Initial Build
+
+[Link to Portfolio Notes](https://github.com/hellodtds/fend_portfolio)
