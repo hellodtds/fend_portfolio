@@ -5,13 +5,29 @@
         <meta charset="utf-8">
 
         <title>Scott Edmonds</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+  <!--       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css"> -->
         <link rel="stylesheet" href="styles.css">
 
         <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
         <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
         <![endif]-->
+
+        <style>
+            figure {
+                position: relative;
+                height: 200px;
+                overflow: hidden;
+            }
+            figure img {
+                width: 300px;
+                margin: 20px;
+            }
+
+            .clip-image {
+                clip-path: inset(20px round 20px);
+            }
+        </style>
     </head>
 
     <body>
@@ -40,19 +56,35 @@
             <section class="gallery">
                 <article class="project">
                     <figure>
-                        <img src="/images/entelo.png" alt="">
+                        <img class="clip-image" src="images/entelo.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure>
-                        <img src="" alt="">
+                        <img src="images/propane-studios.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure>
-                        <img src="" alt="">
+                        <img src="images/viscira.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure>
-                        <img src="" alt="">
+                        <img src="images/mockup.png" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/pixelart.png" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/trading-card.png" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/seagate-evault.png" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/radiov.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                 </article>
