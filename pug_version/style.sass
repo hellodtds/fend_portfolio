@@ -1,0 +1,154 @@
+body
+  margin: 0
+  font-family: 'Noto Sans', sans-serif
+
+.grid-wrapper
+  display: grid
+// Set up 12-col grid
+
+  grid-template-columns: repeat(12, 100px)
+  grid-template-rows: auto
+  grid-column-gap: 30px
+
+// Navigation/Header
+
+.masthead
+  background:
+    color: #333
+  color: #fff
+  padding: .5rem 1rem
+
+.masthead-inner
+  display: flex
+  // flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+
+.site-title
+  h1
+    margin: 0
+
+.hor-menu
+  list-style: none
+  padding: 0
+  margin: 0
+  display: flex
+
+  li
+    // margin-left: 1rem
+    margin: .5rem
+
+    a
+      color: #fff
+      text-decoration: none
+
+      &:hover
+        color: rgba(#fff, 0.8)
+
+
+
+// Hero
+// .hero
+//   background:
+//     image: url("https://picsum.photos/2000/1500/?random")
+//     position: center
+//     size: cover
+//     repeat: no-repeat
+//   height: 50vh
+//   display: flex
+//   align-items: center
+
+
+// Hero with Color Overlay
+.hero
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(blue, 0.5))
+  background:
+    image: url("https://picsum.photos/2000/1500/?image=1029")
+    position: center
+    size: cover
+    repeat: no-repeat
+  height: 50vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+.hero-inner
+  max-width: 50vw
+  padding-left: 2rem
+
+  h2
+    font-size: 2.5rem
+    color: #fff
+
+// 3-Up Features
+
+.features
+  padding: 4rem
+
+.features-inner
+  display: flex
+  max-width: 800px
+  margin: auto // reverts .features-group from sticking to one side after setting a max-width of 800px
+
+.features-group
+  flex: 0 1 30vw
+
+  &:nth-child(2)
+    margin: 0 2rem
+
+.features-image
+  img
+    width: 100%
+
+
+
+
+
+// Call Out
+.callout
+  // background: #333
+  background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url("https://picsum.photos/600/400?random")
+    position: center center
+    size: cover
+    repeat: no-repeat
+  color: #fff
+  padding: 3rem 1rem
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+
+.callout-inner
+  text-align: center
+
+  h3
+    font-size: 2.5rem
+
+
+
+// Blog
+.blog
+  padding-top: 3rem
+
+.blog-inner
+  max-width: 800px
+  margin: auto
+  padding: 0 1rem
+
+.blog-image
+  img
+    width: 100%
+
+.blog-grid
+  display: grid
+  grid-template-columns: 300px 1fr
+  grid-template-rows: auto
+  grid-column-gap: 30px
+  grid-row-gap: 4rem
+
+.blog-summary
+  margin-top: 0
+
+
+// Footer

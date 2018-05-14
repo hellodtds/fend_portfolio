@@ -1,0 +1,85 @@
+body
+  margin: 0
+  font-family: 'Noto Sans', sans-serif
+
+  // Set up 12-col grid
+
+  grid-template-columns: repeat(12, 100px)
+  grid-template-rows: auto
+  grid-column-gap: 30px
+
+  // Navigation/Header
+
+  .masthead
+    background:
+      color: #333
+    color: #fff
+    padding: .5rem 1rem
+
+  .masthead-inner
+    display: flex
+    // flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+
+  .site-title
+    h1
+      margin: 0
+
+  .hor-menu
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+
+    li
+      // margin-left: 1rem
+      margin: .5rem
+
+      a
+        color: #fff
+        text-decoration: none
+
+        &:hover
+          color: rgba(#fff, 0.8)
+
+
+
+  // Hero
+
+  // .hero
+  //   background:
+  //     image: url("https://picsum.photos/2000/1500/?random")
+  //     position: center
+  //     size: cover
+  //     repeat: no-repeat
+  //   height: 50vh
+  //   display: flex
+  //   align-items: center
+
+
+  // Hero with Color Overlay
+  .hero
+    background: linear-gradient(), url("https://picsum.photos/2000/1500/?random")
+      position: center
+      size: cover
+      repeat: no-repeat
+
+
+  .hero-inner
+    max-width: 50vw
+    padding-left: 2rem
+
+    h2
+      font-size: 2.5rem
+
+  // 3-Up Features
+
+
+  // Call Out
+
+
+  // Blog
+
+
+  // Footer
