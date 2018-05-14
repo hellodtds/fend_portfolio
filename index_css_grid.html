@@ -1,0 +1,204 @@
+<style>
+
+  /* Basic CSS */
+* {
+  box-sizing: border-box;
+
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  display: grid;
+  font-family: monospace;
+
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+
+/* Header */
+
+.header {}
+
+.username {}
+
+.description {}
+
+.horizontal__rule {
+  height: 12px;
+  border-box: inset 0 12px 12px -12px rgba(100, 0, 0, 0.5);
+  margin: 5px 0 5px 0;
+}
+
+
+/* Main Section */
+.main {
+/*    max-width:  */
+}
+
+/* Hero */
+.callout__large {
+  display: block;
+  max-width: 100%;
+
+}
+
+
+/* Featured Projects */
+.featured {
+/*   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: space-between; */
+
+  max-width: 100%;
+
+
+
+}
+
+.featured__heading {
+/*   justify-content: flex-start;
+  align-items */
+}
+
+.featured__items {
+    display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 0.5rem 5rem;
+
+  list-style-type: none;
+
+  max-width: 100%;
+}
+
+.featured__item {
+/*   display: flex;
+  flex-direction: wrap;
+  align-content: space-between;
+  justify-content: center;
+
+  overflow-wrap: break-word;
+  border: 1px solid blue;
+
+  max-width: 100%; */
+}
+
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-flow: column wrap;
+
+  max-width: 100%;
+  height: 500px;
+  min-height: 30%;
+  background-color: #333;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+
+.contact__form {}
+
+.contact__info {}
+
+/* Media Queries */
+
+
+</style>
+
+<div class="container">
+
+
+  <body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo__icon"></div>
+    <b class="header__info">
+      <h1 class="username">Scott Edmonds</h1>
+      <p class="description">Front-End Web Developer</p>
+    </b>
+  </header>
+
+  <hr class="horizontal__rule">
+
+  <img src="http://via.placeholder.com/1900x450" alt="" class="callout__large">
+
+  <main class="featured">
+
+    <h2 class="featured__heading">Featured Works</h2>
+    <!-- Featured Works -->
+    <ul class="featured__items">
+      <li>
+        <img class="featured__item" src="http://via.placeholder.com/475" alt="">
+        <h2>Pixel Art Maker</h2>
+        <p>Front-end Web Development: HTML, CSS, jQuery</p>
+      </li>
+
+      <li>
+        <img class="featured__item" src="http://via.placeholder.com/475" alt="">
+        <h3>Animal Trading Card</h3>
+        <p>Front-end Web Development: HTML, CSS</p>
+      </li>
+
+      <li><img class="featured__item" src="http://via.placeholder.com/475" alt="">
+        <h3>Entelo</h3>
+        <p>UX Consultant and Front-end Web Development: HAML, SASS, JavaScript</p>
+      </li>
+
+      <li><img class="featured__item" src="http://via.placeholder.com/475" alt="">
+        <h3>Propane Studios</h3>
+        <p>Full-stack Development: HTML, CSS, JavaScript, PHP</p>
+      </li>
+
+      <li><img class="featured__item" src="http://via.placeholder.com/475" alt="">
+        <h3>Viscira</h3>
+        <p>Front-end Web Development: HTML, LESS, JavaScript, PHP</p>
+      </li>
+
+      <li><img class="featured__item" src="http://via.placeholder.com/475" alt="">
+        <h3>Evault (Seagate)</h3>
+        <p>Front-end Web Development: HTML, CSS, PHP</p>
+      </li>
+
+      <li><img class="featured__item" src="http://via.placeholder.com/475" alt="">
+        <h3>Heron Wines</h3>
+        <p>Full-stack Development: HTML, CSS, JavaScript, PHP</p>
+      </li>
+
+      <li><img class="featured__item" src="http://via.placeholder.com/475" alt="">
+        <h3>project title</h3>
+        <p>Tools used in each project</p>
+      </li>
+    </ul>
+  </main>
+
+  <footer class="footer">
+
+    <div class="contact__info">
+
+
+    </div>
+
+    <label for="contact__form" class="contact"></label>
+    <form action="" class="contact__form"></form>
+
+  </footer>
+
+  <script></script>
+</body>
+
+
+</div>

@@ -4,28 +4,91 @@ doctype html
 
     // Navigation/Heading
 
-    header
-        p Header
+    header.masthead
+      .masthead-inner
+        header.site-title
+          h1 Company X
+        nav.main-nav
+          ul.hor-menu
+            li
+              a(href="#") About
+            li
+              a(href="#") Services
+            li
+              a(href="#") Contact
+            li
+              a(href="#") Sign In
 
     // Hero Image
 
-    section
-        p Hero
+    section.hero
+      .hero-inner
+        h2 Some Amazing Text Goes Here
 
     // 3-Up Features
 
-    section
-        p Features
+    section.features
+      .features-inner
+        article.features-group
+          .features-image
+            img(src="https://picsum.photos/600/400?random")
+          .features-text
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ut voluptate porro aspernatur provident totam, fuga ad tempore possimus reprehenderit perspiciatis blanditiis officiis, a nulla esse qui odit nostrum voluptatem?
+
+            a(href="#") Click me
+
+        article.features-group
+          .features-image
+            img(src="https://picsum.photos/600/400?random")
+          .features-text
+            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui ex asperiores quos dolores commodi enim esse iure voluptatem veniam, quia eius, modi ea. Accusamus illo voluptates quo deserunt, quos excepturi?
+
+            a(href="#") Click me
+
+        article.features-group
+         .features-image
+            img(src="https://picsum.photos/600/400?random")
+         .features-text
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eum, mollitia tempore nobis, maiores animi quasi modi nemo itaque perspiciatis quo vitae. Cupiditate asperiores modi, molestiae accusamus nostrum perspiciatis distinctio.
+
+          a(href="#") Click me
+          // anchor link -> new page
+          // button -> model
 
     // Call Out
 
-    section
-        p Callout
+    section.callout
+      .callout-inner
+        h3 Lorem ipsum, dolor sit amet consectetur adipisicing elit, maiores, nemo
+        // Optional CTA
+        button Click me
+
 
     // Blog
 
-    section
-        p Blog
+    section.blog
+      .blog-inner
+        .blog-grid
+          .blog-image
+            img(src="https://picsum.photos/600/300?image=319")
+          .blog-text
+            p.blog-summary Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores adipisci animi eveniet sint libero! Doloribus quas praesentium laborum voluptatem vitae?
+            a.button(href="#") Read More
+          .blog-image
+            img(src="https://picsum.photos/600/300?image=320")
+          .blog-text
+            p.blog-summary Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque hic unde libero error nisi magni qui quasi labore blanditiis cumque?
+            a.button(href="#") Read More
+          .blog-image
+            img(src="https://picsum.photos/600/300?image=318")
+          .blog-text
+            p.blog-summary Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi fugit, nobis eaque voluptate recusandae laborum nostrum voluptatibus consectetur natus?
+        a.button.ghost-button(href="#") More stories on our blog
+
+
+
+
+
 
     // Footer
 
