@@ -1,7 +1,7 @@
 doctype html
 
 .grid-wrapper
-
+  display: grid
     // Navigation/Heading
 
     header.masthead
@@ -9,7 +9,7 @@ doctype html
         header.site-title
           h1 Company X
         nav.main-nav
-          ul.hor-menu
+          ul.menu
             li
               a(href="#") About
             li
@@ -34,26 +34,20 @@ doctype html
             img(src="https://picsum.photos/600/400?random")
           .features-text
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ut voluptate porro aspernatur provident totam, fuga ad tempore possimus reprehenderit perspiciatis blanditiis officiis, a nulla esse qui odit nostrum voluptatem?
-
-            a(href="#") Click me
-
         article.features-group
           .features-image
             img(src="https://picsum.photos/600/400?random")
           .features-text
             p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui ex asperiores quos dolores commodi enim esse iure voluptatem veniam, quia eius, modi ea. Accusamus illo voluptates quo deserunt, quos excepturi?
-
-            a(href="#") Click me
-
         article.features-group
          .features-image
             img(src="https://picsum.photos/600/400?random")
          .features-text
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eum, mollitia tempore nobis, maiores animi quasi modi nemo itaque perspiciatis quo vitae. Cupiditate asperiores modi, molestiae accusamus nostrum perspiciatis distinctio.
 
-          a(href="#") Click me
-          // anchor link -> new page
-          // button -> model
+          //- a(href="#") Click me
+          //- // anchor link -> new page
+          //- // button -> model
 
     // Call Out
 
@@ -66,7 +60,7 @@ doctype html
 
     // Blog
 
-    section.blog
+    section#blog
       .blog-inner
         .blog-grid
           .blog-image
@@ -83,14 +77,72 @@ doctype html
             img(src="https://picsum.photos/600/300?image=318")
           .blog-text
             p.blog-summary Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi fugit, nobis eaque voluptate recusandae laborum nostrum voluptatibus consectetur natus?
-        a.button.ghost-button(href="#") More stories on our blog
-
-
-
-
+            a.button(href="#") Read More
+        .blog-cta
+          a.button.ghost-button(href="#") More stories on our blog
 
 
     // Footer
 
-    footer
-        p Footer
+    footer#footer
+      // user .footer-inner to center everything
+      .footer-inner
+        // using CSS Grid Container for Mobile Styles
+        .footer-grid
+          // no auto flow, all together as group, column head and links
+          .footer-group
+            .footer-heading
+              h4 Company
+            .footer-links
+              ul
+                li
+                  a(href="#") link1
+                li
+                  a(href="#") link2
+                li
+                  a(href="#") link3
+          .footer-group
+            .footer-heading
+              h4 Store
+            .footer-links
+              ul
+                li
+                  a(href="#") link1
+                li
+                  a(href="#") link2
+                li
+                  a(href="#") link3
+          .footer-group
+            .footer-heading
+              h4 About
+            .footer-links
+              ul
+                li
+                  a(href="#") link1
+                li
+                  a(href="#") link2
+                li
+                  a(href="#") link3
+          .footer-group
+            .footer-heading
+              h4 Products
+            .footer-links
+              ul
+                li
+                  a(href="#") link1
+                li
+                  a(href="#") link2
+                li
+                  a(href="#") link3
+          .footer-group
+            .footer-heading
+              h4 Services
+            // add info differentiation
+            .footer-links
+              ul
+                li
+                  a(href="#") link1
+                li
+                  a(href="#") link2
+                li
+                  a(href="#") link3

@@ -241,6 +241,7 @@ body
     font-size: 1rem
 
 // Footer
+
 #footer
   background:
     color: #333
@@ -249,30 +250,47 @@ body
   display: flex
   justify-content: center
   align-items: center
-
-.footer-grid
-  display: grid
-  grid-template-columns: repeat(5, 1fr)
-  grid-template-rows: auto
-  grid-gap: 1rem
-  justify-items: center
-  max-width: 1000px
-  margin: auto
-
-.footer-group
   text-align: center
-  justify-items: center
-  width: 100%
 
+@media (min-width: 400px)
+  .footer-grid
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: auto
+    grid-gap: 1rem
+    justify-items: center
+    max-width: 1000px
+    margin: auto
+
+@media (min-width: 768px)
+  .footer-grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: auto
+    grid-gap: 1rem
+    justify-items: center
+    max-width: 1000px
+    margin: auto
+
+
+@media (min-width: 1170px)
+  .footer-grid
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    grid-template-rows: auto
+    grid-gap: 1rem
+    justify-items: center
+    max-width: 1000px
+    margin: auto
 
 .footer-heading
   h4
     font-weight: 400
     font-size: 1.2rem
 
-.footer-group
-  width: 200px
-
+@media (min-width: 1170px)
+  .footer-group
+    width: 200px
 
 .footer-links
   ul
