@@ -1,148 +1,72 @@
 doctype html
 
+//- Brian "BeastMode" Haferkamp Fix.
+//- https://youtu.be/UoLTT4CIc8M
+//- Check out his YoutubeChannel!!
+
 .grid-wrapper
-  display: grid
-    // Navigation/Heading
-
-    header.masthead
-      .masthead-inner
-        header.site-title
-          h1 Company X
-        nav.main-nav
-          ul.menu
-            li
-              a(href="#") About
-            li
-              a(href="#") Services
-            li
-              a(href="#") Contact
-            li
-              a(href="#") Sign In
-
-    // Hero Image
-
-    section.hero
-      .hero-inner
-        h2 Some Amazing Text Goes Here
-
-    // 3-Up Features
-
-    section.features
-      .features-inner
-        article.features-group
-          .features-image
-            img(src="https://picsum.photos/600/400?random")
-          .features-text
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ut voluptate porro aspernatur provident totam, fuga ad tempore possimus reprehenderit perspiciatis blanditiis officiis, a nulla esse qui odit nostrum voluptatem?
-        article.features-group
-          .features-image
-            img(src="https://picsum.photos/600/400?random")
-          .features-text
-            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui ex asperiores quos dolores commodi enim esse iure voluptatem veniam, quia eius, modi ea. Accusamus illo voluptates quo deserunt, quos excepturi?
-        article.features-group
-         .features-image
-            img(src="https://picsum.photos/600/400?random")
-         .features-text
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eum, mollitia tempore nobis, maiores animi quasi modi nemo itaque perspiciatis quo vitae. Cupiditate asperiores modi, molestiae accusamus nostrum perspiciatis distinctio.
-
-          //- a(href="#") Click me
-          //- // anchor link -> new page
-          //- // button -> model
-
-    // Call Out
-
-    section.callout
-      .callout-inner
-        h3 Lorem ipsum, dolor sit amet consectetur adipisicing elit, maiores, nemo
-        // Optional CTA
-        button Click me
 
 
-    // Blog
+  header.masthead
+    .masthead-inner
+      .masthead-image
+        img(src="https://en.gravatar.com/userimage/1378683/ce3071252efbdf8139d64d4171568f14.jpg?size=100")
 
-    section#blog
-      .blog-inner
-        .blog-grid
-          .blog-image
-            img(src="https://picsum.photos/600/300?image=319")
-          .blog-text
-            p.blog-summary Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores adipisci animi eveniet sint libero! Doloribus quas praesentium laborum voluptatem vitae?
-            a.button(href="#") Read More
-          .blog-image
-            img(src="https://picsum.photos/600/300?image=320")
-          .blog-text
-            p.blog-summary Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque hic unde libero error nisi magni qui quasi labore blanditiis cumque?
-            a.button(href="#") Read More
-          .blog-image
-            img(src="https://picsum.photos/600/300?image=318")
-          .blog-text
-            p.blog-summary Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi fugit, nobis eaque voluptate recusandae laborum nostrum voluptatibus consectetur natus?
-            a.button(href="#") Read More
-        .blog-cta
-          a.button.ghost-button(href="#") More stories on our blog
+      header.info-group
+        h1 Scott Edmonds
+        p Front-End Web Developer
+  hr
+
+  section.hero
+    .hero-inner
+      p Imagination and Curiosity are My Favorite Tools
+
+  section.features
+    h2 Featured Work
+    .features-inner
+
+      article.features-group
+        .features-image
+          img(src="https://picsum.photos/600/400?random")
+        .features-title
+          h3 Title 1
+          a.features-link(href="#") Link
+
+      article.features-group
+        .features-image
+          img(src="https://picsum.photos/600/400?random")
+        .features-title
+          h3 Title 2
+          a.features-link(href="#") Link
+
+      article.features-group
+        .features-image
+          img(src="https://picsum.photos/600/400?random")
+        .features-title
+          h3 Title 3
+          a.features-link(href="#") Link
+
+      article.features-group
+        .features-image
+          img(src="https://picsum.photos/600/400?random")
+        .features-title
+          h3 Title 4
+          a.features-link(href="#") Link
+
+      article.features-group
+        .features-image
+          img(src="https://picsum.photos/600/400?random")
+        .features-title
+          h3 Title 5
+          a.features-link(href="#") Link
+
+      article.features-group
+        .features-image
+          img(src="https://picsum.photos/600/400?random")
+        .features-title
+          h3 Title 6
+          a.features-link(href="#") Link
 
 
-    // Footer
 
-    footer#footer
-      // user .footer-inner to center everything
-      .footer-inner
-        // using CSS Grid Container for Mobile Styles
-        .footer-grid
-          // no auto flow, all together as group, column head and links
-          .footer-group
-            .footer-heading
-              h4 Company
-            .footer-links
-              ul
-                li
-                  a(href="#") link1
-                li
-                  a(href="#") link2
-                li
-                  a(href="#") link3
-          .footer-group
-            .footer-heading
-              h4 Store
-            .footer-links
-              ul
-                li
-                  a(href="#") link1
-                li
-                  a(href="#") link2
-                li
-                  a(href="#") link3
-          .footer-group
-            .footer-heading
-              h4 About
-            .footer-links
-              ul
-                li
-                  a(href="#") link1
-                li
-                  a(href="#") link2
-                li
-                  a(href="#") link3
-          .footer-group
-            .footer-heading
-              h4 Products
-            .footer-links
-              ul
-                li
-                  a(href="#") link1
-                li
-                  a(href="#") link2
-                li
-                  a(href="#") link3
-          .footer-group
-            .footer-heading
-              h4 Services
-            // add info differentiation
-            .footer-links
-              ul
-                li
-                  a(href="#") link1
-                li
-                  a(href="#") link2
-                li
-                  a(href="#") link3
+
