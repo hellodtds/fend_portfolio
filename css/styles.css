@@ -1,3 +1,6 @@
+/* Thanks to // Brian"BeastMode" Haferkamp for the tutorial on CSS Grid */
+
+
 * {
   box-sizing: border-box;
   grid-column: 1/-1;
