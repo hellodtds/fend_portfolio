@@ -1,120 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Scott Edmonds</title>
-        <!--       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css"> -->
-        <link rel="stylesheet" href="styles.css">
-        <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
-        <!--[if lt IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-        <![endif]-->
-        <style>
-            /* Do I need this 1st CSS ruleset */
-            article,aside,details,figcaption,figure,
-            footer,header,hgroup,menu,nav,section {
-            display:block;
-            }
-            html {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            }
-            *, *:before, *:after {
-            -webkit-box-sizing: inherit;
-            -moz-box-sizing: inherit;
-            box-sizing: inherit;
-            margin: 0;
-            padding: 0;
-            }
-            html, body {
-            border: 1px solid blue;
-            font-size: 12px;
-            font-family: monospace;
-            /*           margin: 0;
-            padding: 0;   */
-            }
-            body {
-            box-sizing: border-box;
-            margin: 1rem;
-            /*             background-color: #ccc;*/
-            }
-            .wrapper {
-            background-color: #ccc;
-            margin: 1rem;
-            padding: 1em;
-            }
-            header, nav, main, footer {
-            background-color: #fff;
-            /*                    margin: 0 auto;
-            width: 80%;*/
-            }
-            .gallery {
-      /*      display: flex;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            height: 100%;
-            width: 50%;*/
-            }
-            /* To have the h2 fill the container width, work? */
-            .gallery h2 {
-            display: block;
-            width: 100%;
-            }
-            img {
-            object-fit: cover;
-            object-position: top;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-            max-width: 30%;
-            max-height: 200px;
-            margin: 2rem;
-            }
-            /* Project Gallery */
-            figure {
-            /*                flex: 2;
-            width: 30%;
-            max-width: 300px;*/
-            }
-        </style>
-    </head>
-    <body>
-        <div class="wrapper">
-            <header>
-                <h1>Scott Edmonds</h1>
-                <h2>Web Developer • Music Technology Enthusiast</h2>
-                <img src="images/scott_image.jpg" alt="photo of scott edmonds">
-            </header>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                </ul>
-                <form>
-                    <input type="search" name="q" placeholder="Search query">
-                    <input type="submit" value="Go!">
-                </form>
-            </nav>
-            <main class="main">
-                <section class="gallery">
-                    <h2>Projects</h2>
-                    <img class="clip-image" src="images/entelo.png" alt="">
-                    <!--                     Spicy jalapeno bacon ipsum dolor amet laboris short ribs ribeye spare ribs, consectetur flank qui meatball. Porchetta picanha dolore irure biltong adipisicing chicken. Salami mollit meatloaf, landjaeger beef tail swine voluptate flank hamburger kevin deserunt turkey -->
-                    <img src="images/pixelart.png" alt="">
-                    <!--                Spicy jalapeno bacon ipsum dolor amet laboris short ribs ribeye spare ribs, consectetur flank qui meatball. -->
-                    <img src="images/trading-card.png" alt="">
-                    <img src="images/propane-studios.png" alt="">
-                    <img src="images/viscira.png" alt="">
-                    <img src="images/seagate-evault.png" alt="">
-                    <!-- img src="images/radiov.png" alt=""> -->
-                </section>
-            </main>
-            <footer>
-                <p>&copy; 2018 Scott Edmonds • Baltimore, "The Greatest City in <del>America</del> the World" </p>
-            </footer>
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio for Scott Edmonds</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body translate="no" >
+    <div class="grid-wrapper">
+      <header class="masthead">
+        <div class="masthead-inner">
+          <div class="masthead-image"><img src="https://en.gravatar.com/userimage/1378683/ce3071252efbdf8139d64d4171568f14.jpg?size=100"/></div>
+          <header class="info-group">
+            <h1>Scott Edmonds</h1>
+            <p>Web Developer</p>
+          </header>
         </div>
-    </body>
+      </header>
+      <hr/>
+      <section class="hero">
+        <div class="hero-inner">
+          <p>Imagination and Curiosity are My Favorite Tools</p>
+        </div>
+      </section>
+      <section class="features">
+        <h2>Featured Work</h2>
+        <div class="features-inner">
+          <article class="features-group">
+            <div class="features-image"><img src="https://raw.githubusercontent.com/hellodtds/fend_portfolio/reset-project/images/pixelart_resize.png"/></div>
+            <div class="features-title">
+              <h3>Front End Developer Nanodegree</h3><a class="features-link" href="https://codepen.io/hellodtds/pen/KoPQMj">https://codepen.io/hellodtds/pen/KoPQMj</a>
+            </div>
+          </article>
+          <article class="features-group entelo">
+            <div class="features-image"><img src="https://raw.githubusercontent.com/hellodtds/fend_portfolio/reset-project/images/entelo_canvas_resize.png"/>
+              <!-- rollover idea: type of work and tools used  -->
+            </div>
+            <div class="features-title">
+              <h3>Entelo.com (UX/Front-End)</h3><a class="features-link" href="https://www.entelo.com/">https://www.entelo.com/</a>
+            </div>
+          </article>
+          <article class="features-group">
+            <div class="features-image"><img src="https://raw.githubusercontent.com/hellodtds/fend_portfolio/reset-project/images/seagate-evault.png"/></div>
+            <div class="features-title">
+              <h3>Evault (Full-Stack)</h3><a class="features-link" href="https://www.carbonite.com/">https://www.carbonite.com/</a>
+            </div>
+          </article>
+          <article class="features-group">
+            <div class="features-image"><img src="https://raw.githubusercontent.com/hellodtds/fend_portfolio/reset-project/images/propane-studios_resize.png"/></div>
+            <div class="features-title">
+              <h3>Propane Studio (Full-Stack)</h3><a class="features-link" href="https://propanestudio.com/">https://propanestudio.com/</a>
+            </div>
+          </article>
+          <article class="features-group">
+            <div class="features-image"><img src="https://raw.githubusercontent.com/hellodtds/fend_portfolio/reset-project/images/viscira_resize.png"/></div>
+            <div class="features-title">
+              <h3>Viscira(Full-Stack)</h3><a class="features-link" href="http://www.viscira.com/">http://www.viscira.com</a>
+            </div>
+          </article>
+          <article class="features-group">
+            <div class="features-image"><img src="https://raw.githubusercontent.com/hellodtds/fend_portfolio/reset-project/images/heron-front_resize.png"/></div>
+            <div class="features-title">
+              <h3>Heron Wines (Art Direction/Full-Stack)</h3><a class="features-link" href="http://www.heronwines.com/">http://www.heronwines.com/</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
