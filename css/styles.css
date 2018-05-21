@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  grid-column: 1/-1;
+}
+
+::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Source Code Pro;
+  -moz-osx-font-smoothing: grayscale;
+  color: #525c65;
+  font-size: 16px;
+  margin: 0;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  max-width: 1530px;
+  margin: 0 auto;
+}
+
+.masthead-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.masthead-inner .masthead-image img {
+  border-radius: 100%;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.info-group {
+  text-align: right;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+}
+.info-group h1 {
+  font-size: 3.3rem;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+.info-group p {
+  font-size: 1.3rem;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+hr {
+  color: #029fcb;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1496917690447-4b239a568092");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 76vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-inner {
+  max-width: 80vw;
+  margin: auto;
+  padding-left: 2rem;
+}
+.hero-inner p {
+  font-size: 3rem;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+  line-height: 4rem;
+  padding-right: 2rem;
+}
+
+section.features {
+  padding: 2rem;
+}
+section.features h2 {
+  font-size: 2.8rem;
+}
+
+.features-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features-group {
+  text-align: center;
+}
+
+.features-title h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 1rem 0 1rem;
+}
+.features-title .features-link {
+  color: #525c65;
+  text-decoration: none;
+  display: inherit;
+  margin-bottom: 3rem;
+}
+.features-title .features-link:hover {
+  color: rgba(82, 92, 101, 0.8);
+}
+
+.features-image img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero-inner {
+    padding-left: 0;
+  }
+
+  .hero-inner p {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    line-height: 4rem;
+    font-weight: lighter;
+  }
+}
+@media (max-width: 768px) {
+  section.features h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+    font-weight: bolder;
+  }
+}
+@media (max-width: 768px) {
+  .masthead-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .info-group {
+    text-align: center;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+  }
+  .info-group h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+  }
+  .info-group p {
+    font-size: 1.2rem;
+    margin: 0.2rem 0 2rem;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .features-title h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 3rem 0 0.5rem;
+  }
+  .features-title .features-link {
+    color: #525c65;
+    text-decoration: none;
+    display: inherit;
+    margin: 0 0 3rem;
+    font-size: 1rem;
+  }
+  .features-title .features-link:hover {
+    color: rgba(82, 92, 101, 0.8);
+  }
+  .features-title .features-link:after {
+    content: "⇓";
+    display: inline-block;
+    width: 100%;
+    margin: 2rem 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .features-group:nth-child(6) .features-link:after {
+    content: "the end for now :-)";
+    font-size: 0.7rem;
+    font-weight: bolder;
+  }
+}
