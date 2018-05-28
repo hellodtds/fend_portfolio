@@ -1,16 +1,218 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <style></style>
-  </head>
-</html>
+<head>// ---------------------------------------------
+// Specific Criteria
+// ---------------------------------------------
+// No content should be hidden on mobile devices.
+// Cross-Device Compatibility (ToDo)
+// - Desktop
+// - Mobile: Google Nexus 5
+// - Tablet: Apple iPad
+
+*
+  box-sizing: border-box
+  grid-column: 1 / -1
+
+::before, ::after
+  box-sizing: inherit
+
+body
+  font-family: Source Code Pro
+  -moz-osx-font-smoothing: grayscale
+  color: #525c65
+  font-size: 16px
+  margin: 0
+
+
+.grid-wrapper
+  display: grid
+  grid-template-columns: repeat(12, 1fr)
+  grid-template-rows: auto
+  //------------------------------------------------------------------------
+  // uncomment the following the following to center the wrapper on the page
+  //------------------------------------------------------------------------
+  max-width: 1530px
+  margin: 0 auto
+
+.masthead-inner
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  margin: 0
+  padding: 0
+
+  .masthead-image
+    img
+      border-radius: 100%
+      margin: 0 1rem
+      padding: 1rem
+
+.info-group
+  text-align: right
+  margin: 0 1rem
+  padding: .5rem 1rem
+
+  h1
+    font-size: 3.3rem
+    font-weight: lighter
+    margin: 0
+    padding: 0
+  p
+    font-size: 1.3rem
+    margin: 1rem 0 0
+    padding: 0
+
+hr
+  color: #029fcb
+  margin: 0
+  padding: 0
+
+.hero
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1496917690447-4b239a568092")
+    position: center
+    size: cover
+    repeat: no-repeat
+  height: 76vh
+
+  display: flex
+  justify-content: center
+  align-items: center
+
+.hero-inner
+  max-width: 80vw
+  margin: auto
+  padding-left: 2rem
+
+  p
+    font-size: 3rem
+    font-weight: 800
+    text-align: center
+    color: white
+    line-height: 3.4rem
+
+
+
+section.features
+  padding: 2rem
+  h2
+    font-size: 2.8rem
+
+// Added flex to features wrapper
+.features-inner
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.features-group
+  text-align: center
+
+.features-title
+  h3
+    font-size: 2rem
+    text-transform: uppercase
+    margin: 1rem 0 1rem
+
+  .features-link
+    color: #525c65
+    text-decoration: none
+    display: inherit
+    margin-bottom: 3rem
+
+
+    &:hover
+      color: rgba(#525c65, 0.8)
+
+.features-image
+  img
+    width: 100%
+
+@media (max-width: 768px)
+  .hero-inner
+    padding-left: 0
+  .hero-inner p
+    font-size: 2rem
+    font-weight: 800
+    text-align: center
+    color: white
+    line-height: 4rem
+    font-weight: lighter
+
+@media (max-width: 768px)
+  section.features h2
+    font-size: 1.8rem
+    text-align: center
+    width: 100%
+    font-weight: bolder
+
+
+@media (max-width: 768px)
+  .masthead-inner
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    margin: 0
+    padding: 0
+  .info-group
+    text-align: center
+    margin: 0 1rem
+    padding: 0.5rem 1rem
+    h1
+      font-size: 2rem
+      font-weight: lighter
+      margin: 0
+      padding: 0
+    p
+      font-size: 1.2rem
+      margin: .2rem 0 2rem
+      padding: 0
+
+
+
+@media (max-width: 768px)
+  .features-title
+
+    h3
+      font-size: 1rem
+      text-transform: uppercase
+      margin: 3rem 0 0.5rem
+
+    .features-link
+      color: #525c65
+      text-decoration: none
+      display: inherit
+      margin: 0 0 3rem
+      font-size: 1rem
+      &:hover
+        color: rgba(#525c65, 0.8)
+      &:after
+        content: "⇓"
+        display: inline-block
+        width: 100%
+        margin: 2rem 0 0
+
+
+@media (max-width: 768px)
+  // .features-link last child
+  .features-group:nth-child(6)
+    .features-link
+      &:after
+        content: "the end for now :-\)"
+        font-size: 0.7rem
+        font-weight: bolder
+
+
+
+
+</head>
+<body></body>
 <div class="grid-wrapper">
   <header class="masthead">
     <div class="masthead-inner">
       <div class="masthead-image"><img src="https://en.gravatar.com/userimage/1378683/ce3071252efbdf8139d64d4171568f14.jpg?size=100"></div>
       <header class="info-group">
         <h1>Scott Edmonds</h1>
-        <p>Front-End Web Developer</p>
+        <p>Web Developer</p>
       </header>
     </div>
   </header>
@@ -24,39 +226,41 @@
     <h2>Featured Work</h2>
     <div class="features-inner">
       <article class="features-group">
-        <div class="features-image"><img src="https://picsum.photos/600/400?random"></div>
+        <div class="features-image"><img src="https://raw.githubusercontent.com/hellodtds/fend_portfolio/reset-project/images/pixelart_resize.png"></div>
         <div class="features-title">
-          <h3>Title 1</h3><a class="features-link" href="#">Link</a>
+          <h3>Front End Developer Nanodegree</h3><a class="features-link" href="https://codepen.io/hellodtds/pen/KoPQMj">https://codepen.io/hellodtds/pen/KoPQMj</a>
+        </div>
+      </article>
+      <article class="features-group entelo">
+        <div class="features-image"><img src="https://raw.githubusercontent.com/hellodtds/fend_portfolio/reset-project/images/entelo_canvas_resize.png">
+          <!-- rollover idea: type of work and tools used-->
+        </div>
+        <div class="features-title">
+          <h3>Entelo.com (UX/Front-End)</h3><a class="features-link" href="https://www.entelo.com/">https://www.entelo.com/</a>
         </div>
       </article>
       <article class="features-group">
-        <div class="features-image"><img src="https://picsum.photos/600/400?random"></div>
+        <div class="features-image"><img src="https://raw.githubusercontent.com/hellodtds/fend_portfolio/reset-project/images/seagate-evault.png"></div>
         <div class="features-title">
-          <h3>Title 2</h3><a class="features-link" href="#">Link</a>
+          <h3>Evault (Full-Stack)</h3><a class="features-link" href="https://www.carbonite.com/">https://www.carbonite.com/</a>
         </div>
       </article>
       <article class="features-group">
-        <div class="features-image"><img src="https://picsum.photos/600/400?random"></div>
+        <div class="features-image"><img src="https://raw.githubusercontent.com/hellodtds/fend_portfolio/reset-project/images/propane-studios_resize.png"></div>
         <div class="features-title">
-          <h3>Title 3</h3><a class="features-link" href="#">Link</a>
+          <h3>Propane Studio (Full-Stack)</h3><a class="features-link" href="https://propanestudio.com/">https://propanestudio.com/</a>
         </div>
       </article>
       <article class="features-group">
-        <div class="features-image"><img src="https://picsum.photos/600/400?random"></div>
+        <div class="features-image"><img src="https://raw.githubusercontent.com/hellodtds/fend_portfolio/reset-project/images/viscira_resize.png"></div>
         <div class="features-title">
-          <h3>Title 4</h3><a class="features-link" href="#">Link</a>
+          <h3>Viscira(Full-Stack)</h3><a class="features-link" href="http://www.viscira.com/">http://www.viscira.com</a>
         </div>
       </article>
       <article class="features-group">
-        <div class="features-image"><img src="https://picsum.photos/600/400?random"></div>
+        <div class="features-image"><img src="https://raw.githubusercontent.com/hellodtds/fend_portfolio/reset-project/images/heron-front_resize.png"></div>
         <div class="features-title">
-          <h3>Title 5</h3><a class="features-link" href="#">Link</a>
-        </div>
-      </article>
-      <article class="features-group">
-        <div class="features-image"><img src="https://picsum.photos/600/400?random"></div>
-        <div class="features-title">
-          <h3>Title 6</h3><a class="features-link" href="#">Link</a>
+          <h3>Heron Wines (Art Direction/Full-Stack)</h3><a class="features-link" href="http://www.heronwines.com/">http://www.heronwines.com/</a>
         </div>
       </article>
     </div>
